@@ -22,3 +22,7 @@ body {
 .intro-content {
   width: 50%;
 }
+
+.content {
+  max-width:800px;
+}

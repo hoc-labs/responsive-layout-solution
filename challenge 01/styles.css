@@ -15,5 +15,11 @@ body {
   margin: 0 auto;
 
   padding: 2em;
-  height: 300px;
+  /* height: 300px; */
+
+  max-width:1100px;
+}
+
+.intro-content {
+  width:50%;
 }
