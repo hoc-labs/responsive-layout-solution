@@ -69,6 +69,7 @@ header {
     padding: 0;
     list-style: none;
     display:flex;
+    border: solid 3px red;
 }
 
 .nav__list--primary {
@@ -87,11 +88,14 @@ header {
     justify-content: center;
     align-items: center;
     margin-right:20px;
+    border: solid 3px blue;
 }
+
 .nav {
     display:flex;
     justify-content: space-between;
     width:100%;
+    border: solid 3px green;
 }
 
 .nav__link {

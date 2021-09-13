@@ -1,20 +1,25 @@
 # Flex Navigation
 
 ## Build Navigation Bar
-* Get all the navigation items next to one another.
-* Add a space between all the items.
+Initial requirements:
+* Display the navigation in a single row using flex.
+* Add spacing between all the items (use sibling CSS selector/margin-left)
 * Expand the padding on the header.
 * Align the left of the navbar with the main content.
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6.png)
 
-## Push the Sign-in and Sign-up items to the right
+## Changes to the Nav Bar
+
+### Push the Sign-in and Sign-up items to the right
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6-2.png)
 
 ### There are a couple of solutions
 
-**Create a style to push the last two items to the right**
+**Option 1 - Create a style to push the last two items to the right**
+
+By adding a style to the first item you want to push to the right and setting the margin-left of that style to auto, the browser will take up all of the available space for the left margin, thereby pushing everything to the right.
 
 ```markup
 <li class="nav__item nav__item--push-right">
@@ -28,7 +33,7 @@
 }
 ```
 
-**Create two child `<ul>` elements and have the parent `.nav` style set to flex, space-evenly**
+**Option 2 - Separate the child `<li>`> elements into two `<ul>` lists and have the parent `.nav` style set to flex, space-between, which pushes each child to the margins.**
 ```markup
 <nav class="nav">
     <ul class="nav__list">
@@ -51,22 +56,29 @@
     justify-content: space-between;
 }
 ```
+## Add a logo
 
-To right-align the last item on the nav bar, we need to use the trick to add space to the left of each item.
+Place the logo before of the `<nav>` element and wrap the img in an `<a>` element. 
 
-```css 
-.nav__item + .nav__item {
-    margin-left:20px;
+![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6-3.png)
+
+You can see that the logo is not aligned vertically with the other navbar items.
+
+![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-navbar-1.png)
+
+To fix this, we can center the logo element by creating a flexbox for the single element.
+
+```css
+.logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    border: solid 3px blue;
 }
 ```
 
-To confirm that this is working you can temporarily add a style, such as font-size:32px to see which elements are affected.
-
-## Add a logo
-
-The logo needs to be aligned in the vertical direction using align-items:center;
-
-![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6-3.png)
+![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-navbar-2.png)
 
 ## Center the primary nav items
 
@@ -81,6 +93,8 @@ nav__list--primary {
 ```
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6-4.png)
+
+
 
 
 

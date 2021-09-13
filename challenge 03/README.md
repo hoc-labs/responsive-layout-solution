@@ -48,6 +48,8 @@ In the markup below, I have removed the paragraph text on the left and added an 
     </div> 
 ```
 
+![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-img-3.png)
+
 But, if I add back in the paragraph on the left, the image on the right now stretches to fill the height of the container, and is out of proportion.
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-img-1.png)
@@ -67,7 +69,7 @@ To solve this problem, you can wrap the img element in a `<div>` element. Then t
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <a href="#" class="btn">I want to learn</a>
             </div>
-            <div class="hero__img col"><img src="img/hero-img.jpg" alt=""></div>
+            <div class="hero__img"><img src="img/hero-img.jpg" alt=""></div>
         </div>
     </div> 
    ```
