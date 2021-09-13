@@ -1,8 +1,16 @@
-## Challenge 2 - Controlling width across sections
+# Flex Basics
 
-Modify the files to meet the following conditions:
-* Keep the text inside .intro-content in the same place, but have the background extend from one side of the viewport to the other, no matter how wide or narrow the browser is.
-* Limit the maximum width of the text in the bottom area.
+![](https://raw.githubusercontent.com/hoc-labs/images/main/flex-basics-design.png)
 
-![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge2.png)
+### Requirements
+* The headings in the first row must be
+   a different color
+* The two .col at the bottom must go next
+   to one another
+* The section at the bottom should have
+   a dark background color and a different
+   color of text
+* There should be space between the columns.
+* Use max-width to limit the width of the text on the screen.
+
 

@@ -25,16 +25,11 @@ h1 {
 }
 
 .row {
-    /* display: flex => flex container */
     display: flex;
     justify-content: space-between;
-    
-    /* can't use yet */
-    /* gap: 100px; */
 }
 
 .col {
-    /* these are now flex items */
     width: 100%;
 }
 
@@ -48,29 +43,38 @@ h1 {
     color: #FFF;
 }
 
-.hero__text { 
+.hero__text,
+.primary-content { 
     width: 62%;
 }
 
-.hero__img {
+.hero__img,
+.sidebar {
     width: 32%;
-    align-self: flex-start;
 }
 
 .hero p {
     margin-bottom: 3em;
 }
 
-.left h2 {
+.section-title {
     color: #136C72;
 }
 
-.right {
+.sidebar-title {
+
+}
+
+.sidebar {
     background-color:#136C72;
     color:white;
     margin-left:20px;
     text-align:center;
-    padding:20px;
+    padding:0 20px;
+}
+
+main {
+    margin-top:30px;
 }
 
 .btn {
