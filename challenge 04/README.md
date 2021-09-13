@@ -1,10 +1,10 @@
 # Flex Navigation
 
 ## Build Navigation Bar
-* Get all the navigation items next to one another
-* Add a space between all the items
-* Expand the padding on the header
-* Align the left part of the navbar with the other left content.
+* Get all the navigation items next to one another.
+* Add a space between all the items.
+* Expand the padding on the header.
+* Align the left of the navbar with the main content.
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge6.png)
 

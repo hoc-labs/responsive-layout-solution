@@ -1,8 +1,13 @@
-## Challenge 2 - Controlling width across sections
+## Controlling width across sections
 
-Modify the files to meet the following conditions:
-* Keep the text inside .intro-content in the same place, but have the background extend from one side of the viewport to the other, no matter how wide or narrow the browser is.
-* Limit the maximum width of the text in the bottom area.
+### Before
+![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge1-before1.png)
+
+### After
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/responsive-challenge2.png)
+
+Modify the files to meet the following conditions:
+* Have the content span the same width down the entire page, but have the background color extend across the viewport for all widths.
+* Limit the maximum width of the text in the bottom area.
 
